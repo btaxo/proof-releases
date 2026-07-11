@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get an AI key — Proof</title>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #57606a;
+    --paper: #f7f5f0;
+    --paper-raised: #ffffff;
+    --accent: #0f766e;
+    --edge: #e1ddd4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ede7dc;
+      --muted: #a89e8f;
+      --paper: #181511;
+      --paper-raised: #201c16;
+      --accent: #35b5a8;
+      --edge: #332d24;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 32px 0 8px;
+  }
+  ol { margin: 0 0 0 20px; padding: 0; }
+  li { margin-bottom: 10px; }
+  code {
+    background: var(--paper-raised);
+    border: 1px solid var(--edge);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.95em;
+  }
+  .note {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: var(--paper-raised);
+    border: 1px solid var(--edge);
+    border-radius: 8px;
+  }
+  a {
+    color: var(--accent);
+    overflow-wrap: anywhere;
+  }
+  .back { margin-top: 32px; display: inline-block; }
+  @media (max-width: 420px) {
+    main { padding: 40px 20px; }
+    h1 { font-size: 1.9rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Getting your AI key</h1>
+  <p>Proof's AI features use Anthropic's Claude, and they need an <em>API key</em> —
+  a long code starting with <code>sk-ant-</code> that Proof uses to talk to Claude
+  on your behalf.</p>
+
+  <h2>Did someone give you a key?</h2>
+  <p>Paste it into Proof's welcome screen. That's it — you're done.</p>
+
+  <h2>Getting your own key (about 3 minutes)</h2>
+  <ol>
+    <li>Create an account at <a href="https://console.anthropic.com">console.anthropic.com</a>.
+        This is a separate, pay-as-you-go developer account — it does <strong>not</strong>
+        require a Claude subscription.</li>
+    <li>Add a small amount of credit under <strong>Billing</strong>.</li>
+    <li>Go to <strong>API Keys</strong>, create a key, and copy it.</li>
+    <li>Paste it into Proof's welcome screen (or later under <strong>Settings</strong>).</li>
+  </ol>
+
+  <p class="note">The Anthropic console shows exactly what you've used, and Proof
+  has its own usage meter under Settings so you can check anytime.</p>
+
+  <a class="back" href="index.html">&larr; Back to download</a>
+</main>
+</body>
+</html>

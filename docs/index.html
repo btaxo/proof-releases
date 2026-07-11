@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proof — build, tailor, and track job applications</title>
+<style>
+  :root {
+    --ink: #1f2328;
+    --muted: #57606a;
+    --paper: #f7f5f0;
+    --paper-raised: #ffffff;
+    --accent: #0f766e;
+    --accent-text: #ffffff;
+    --edge: #e1ddd4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #ede7dc;
+      --muted: #a89e8f;
+      --paper: #181511;
+      --paper-raised: #201c16;
+      --accent: #35b5a8;
+      --accent-text: #0e1512;
+      --edge: #332d24;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  h1 .dot { color: var(--accent); }
+  .tagline {
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin: 12px 0 32px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-text);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .cta:hover { filter: brightness(1.08); }
+  .req {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  ol.steps {
+    margin: 40px 0 0 20px;
+    padding: 0;
+  }
+  ol.steps li { margin-bottom: 12px; }
+  .privacy {
+    margin-top: 40px;
+    padding: 16px 20px;
+    background: var(--paper-raised);
+    border: 1px solid var(--edge);
+    border-radius: 8px;
+  }
+  a {
+    color: var(--accent);
+    overflow-wrap: anywhere;
+  }
+  footer {
+    margin-top: 48px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 420px) {
+    main { padding: 40px 20px; }
+    h1 { font-size: 2.4rem; }
+    .tagline { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Proof<span class="dot">.</span></h1>
+  <p class="tagline">Build, tailor, and track job applications — on your own computer.</p>
+
+  <a class="cta" href="https://github.com/btaxo/proof-releases/releases/latest/download/Proof.dmg">
+    Download for Mac
+  </a>
+  <p class="req">Requires an Apple Silicon Mac (M1 or later) running macOS 12 (Monterey) or newer. Intel Mac, Windows, and Linux builds are planned.</p>
+
+  <ol class="steps">
+    <li><strong>Download</strong> Proof.dmg and open it.</li>
+    <li><strong>Drag</strong> Proof into the Applications folder.</li>
+    <li><strong>Open</strong> Proof from Applications — it will ask for an AI key
+        the first time. <a href="get-a-key.html">Here's how to get one.</a></li>
+  </ol>
+
+  <div class="privacy">
+    <strong>Private by design.</strong> Your library and applications are stored on
+    your own computer — nothing is uploaded to us. When you use an AI feature, the
+    relevant text is sent to Anthropic with your own key to generate a response,
+    and nothing else is shared.
+  </div>
+
+  <footer>Proof is a small, independently made app.</footer>
+</main>
+</body>
+</html>
